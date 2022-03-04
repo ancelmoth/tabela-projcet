@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabbrlas</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+
+<style>
+
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        
+        
+    }
+    caption{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        padding: 10px;
+        background-color: grey;
+    }
+
+    tbody > tr:nth-child(odd){ /* Efeito zebrado, pode usar even tb, ou 2n que pula a cada 2 linhas ou 2n-1 */
+        background-color: gray;
+    }
+    tbody > tr:nth-child(even){
+        background-color: aquamarine;
+    }
+    
+
+    table{ /*Tabela
+        */
+         width: 500px;
+         border-collapse: collapse;
+         
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+        th{
+            background-color: rgb(187, 173, 173);
+        }
+
+       
+       
+       
+  
+
+</style>
+<body>
+
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--
+        Caption = titulo
+        Anatomia para tabelas grandes:
+        Table
+          Thead
+             TR, TD, TH = table row, table data, table head
+          Tbody
+             TR. TD, TH
+          Tfoot
+             TR, TD, TH
+    -->
+     <table>
+         <caption>Lista de unidades federativas do Brasil</caption>
+         <thead>
+             <tr>
+                 <th scope="col">Unidade Federativa</th> <!--table head, cabeçalho de uma celula-->
+                 <th scope="col">População 2010</th>
+                 <th scope="col">População 2021</th>
+                 <th scope="col">Mudança</th>
+                 <th scope="col">total da população</th>
+                 
+             </tr>
+         </thead>
+         <tbody> <!--Corpo da tabela-->
+             <tr> <!--Linha da tabela table row-->
+                 <td>São Paulo</td> <!--dados da tabela table data-->
+                 <td>45.919,649</td>
+                 <td>21.9%</td>
+                 <td>+13.05%</td>
+                 <td>21.9%</td>
+             </tr>
+             <tr> <!--Dentro da minha tr eu posso ter varias TDs, que sao dados preenchidos nas linhas TR-->
+                 <td>Minas Gerais</td>
+                 <td>19 597 330</td>
+                 <td>21 411 923</td>
+                 <td>+9.26%</td>
+                 <td>8,2%</td>
+             </tr>
+                 <tr>
+                     <td>Rio de Janeiro</td>
+                     <td>15 989 929</td>
+                     <td>17.463,349</td>
+                     <td>+9.21%</td>
+                     <td>8.2%</td>
+                 </tr>
+                 <tr>
+                     <td>Bahia</td>
+                     <td>14.016,906</td>
+                     <td>14.985,284</td>
+                     <td>+6.91%</td>
+                     <td>7,1%</td>
+                 </tr>
+                 <tr>
+                     <td>Paraná</td>
+                     <td>10.444,526</td>
+                     <td>11.597,484</td>
+                     <td>+6.91%</td>
+                     <td>7.1%</td>
+                 </tr>
+                 <tr>
+                     <td>Rio Grande do Sul</td>
+                     <td>10.693,929</td>
+                     <td>11.466,630</td>
+                     <td>+7.23%</td>
+                     <td>5,4%</td>
+                 </tr>
+                 <tr>
+                     <td>Pernambuco</td>
+                     <td>8.796,448</td>
+                     <td>9.796,448</td>
+                     <td>+9.98%</td>
+                     <td>4,5%</td>
+                 </tr>
+                
+             </tr>
+         </tbody>
+         <tfoot>
+             <th>Numero Total da População</th>
+             <td><img src="imagem/imagem01.png" alt="text"></td>
+             <td><img src="imagem/imagem01.png" alt="texto"></td>
+             <td><img src="imagem/imagem01.png" alt="textoo"></td>
+             <td><strong>210.000.000,00</strong></td>
+         </tfoot> <!--Pé da tabela table foot-->
+     </table>
+    
+</body>
+
+</html>
