@@ -34,12 +34,17 @@
         */
          width: 500px;
          border-collapse: collapse;
+         position: relative; /* serve para o cabeçalho nao subir qdo vc der um scroll longo na tela */
          
         }
         td, th{
             border: 1px solid black;
             padding: 10px;
             
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
         }
         th{
             background-color: rgb(187, 173, 173);
@@ -132,13 +137,15 @@
              </tr>
          </tbody>
          <tfoot>
-             <th>Numero Total da População</th>
-             <td><img src="imagem/imagem01.png" alt="text"></td>
-             <td><img src="imagem/imagem01.png" alt="texto"></td>
-             <td><img src="imagem/imagem01.png" alt="textoo"></td>
+             <th rowspan="2">Numero Total da População</th>
+             
              <td><strong>210.000.000,00</strong></td>
          </tfoot> <!--Pé da tabela table foot-->
      </table>
+
+     <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, optio animi. Doloremque reiciendis quisquam ratione soluta, accusantium, ipsam doloribus laborum architecto repellat maiores sunt quaerat eum nesciunt officiis veritatis exercitationem! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id in repellat nam blanditiis, iusto reprehenderit, rerum nulla exercitationem ullam excepturi perferendis sunt veritatis, voluptas modi dicta officiis laudantium corrupti! Quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestiae hic est? Cupiditate, quisquam nobis nesciunt deleniti ea enim aspernatur excepturi asperiores nisi quod officia ratione architecto alias dolorum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est nesciunt dolorem quasi, cupiditate repellendus tempora. Quos veritatis quod natus at dolores blanditiis, voluptas porro! Laudantium quas nesciunt nihil consequatur architecto? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores minus alias minima inventore odit quos voluptas illum, id voluptates commodi magnam officiis consequuntur labore tempore expedita in suscipit, porro velit. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat eius delectus dolores neque. Earum at aspernatur provident ipsa labore illo enim delectus, molestias aliquid quaerat sed. Saepe totam pariatur natus! lo 
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti id reprehenderit impedit? Quae unde sequi, dolor consequatur, facere officia architecto laboriosam, nesciunt quos exercitationem voluptate eos? Quod accusamus laborum officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere obcaecati aliquid sapiente, quam doloremque sunt rem saepe libero, dolorum, illo quisquam pariatur deleniti explicabo animi ipsa! Quaerat sed modi placeat! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt voluptas, repellat, explicabo hic dolores architecto ad veniam impedit obcaecati accusantium nobis consequatur aliquid ipsum numquam dolore ut ratione magnam iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur exercitationem ipsam illum ea harum quaerat maiores reprehenderit. Dolor ad facere aliquam optio. Sint, non! Delectus quasi quos aperiam est. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est quam eum odit magnam rerum vel ex culpa et sunt voluptas pariatur, tempora blanditiis iste, unde distinctio exercitationem optio accusantium! Quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut et culpa numquam nesciunt ab architecto, voluptates aliquid mollitia maiores deserunt laboriosam eius explicabo tenetur error, quam voluptas unde odit totam!
+     </h1>
     
 </body>
 
